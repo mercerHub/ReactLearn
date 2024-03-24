@@ -25,7 +25,7 @@ function InputBox({
                     
                     className="outline-none w-full bg-transparent py-1.5"
                     id={amountInputId}
-                    type="number"
+                    type= 'number'
                     placeholder="Amount"
                     disabled = {amountDisable}
                     value={amount}
@@ -41,11 +41,11 @@ function InputBox({
                     disabled = {currencyDisable}
                 >
                     
-                      {currencyOptions.map((curr) => (
-                        <option key = {curr} value = {curr}>
-                            {curr}
-                        </option>
-                      ))}  
+                    {currencyOptions.map((currency) => (
+                    <option key = {currency} value = {currency}>
+                        {currency}
+                    </option>
+                    ))}  
                 
                 </select>
             </div>
